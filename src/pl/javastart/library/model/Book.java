@@ -8,6 +8,19 @@ public class Book extends Publication {
     private int pages;
     private String isbn;
 
+    public static final String TYPE = "Książka";
+
+    @Override
+    public String toCsv() {
+        return (TYPE + ";") +
+                getTitle() + ";" +
+                getPublisher() + ";" +
+                getYear() + ";" +
+                author + ";" +
+                pages + ";" +
+                isbn + "";
+    }
+
     // Konstruktory
     public Book(String title, String author, int year, int pages, String publisher,
                 String isbn) {
