@@ -9,6 +9,12 @@ public class Library {
         String publisher = "Greg";
         String isbn = "923412532";
 
-
-    }
+        System.out.println(appName);
+        System.out.println("Książki dostępne w bibliotece:");
+        System.out.println(title);
+        System.out.println(author);
+        System.out.println(releaseDate);
+        System.out.println(pages);
+        System.out.println(publisher);
+        System.out.println(isbn); }
 }
